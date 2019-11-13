@@ -1,0 +1,38 @@
+// ќбъ€вл€ем ступенчатый массив
+            int[][] myArr = new int[4][];
+            myArr[0] = new int[1];
+            myArr[1] = new int[2];
+            myArr[2] = new int[3];
+            myArr[3] = new int[4];
+
+            // »нициализируем ступенчатый массив
+            for (int i = 0; i < 1; i++)
+            {
+                myArr[0][i] = i;
+                Console.Write("{0}", myArr[0][i]);
+            }
+
+            Console.WriteLine();
+            for (int i = 0; i < 2; i++)
+            {
+                myArr[1][i] = i;
+                Console.Write("{0}", myArr[1][i]);
+            }
+
+            Console.WriteLine();
+            for (int i = 0; i < 3; i++)
+            {
+                myArr[2][i] = i;
+                Console.Write("{0}", myArr[2][i]);
+            }
+
+            Console.WriteLine();
+            for (int i = 0; i < 4; i++)
+            {
+                myArr[3][i] = i;
+                Console.Write("{0}", myArr[3][i]);
+            }
+
+            Console.WriteLine("");
+
+            Console.ReadLine();
