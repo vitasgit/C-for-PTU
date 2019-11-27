@@ -1,0 +1,9 @@
+Person p = new Person();
+
+p.SetName("Vitas");
+
+string name = p.GetName();
+
+Console.WriteLine(name);
+
+Console.ReadKey();

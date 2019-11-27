@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            using (StreamWriter myStream = new StreamWriter("myfile.txt", true))
+                { myStream.WriteLine("Lorem ipsum"); }
+	
+            using (StreamReader sr = new StreamReader("namefile.txt"))//для чтения файла
+            {
+                sr.ReadLine();//построчное чтение
+                sr.ReadToEnd();//чтение полностью
+            }
+
+
+            using (StreamWriter sw = new StreamWriter("namefile.txt"))//для записи
+            {
+                sw.WriteLine("asd");//построчная запись
+                sw.Write("asd");//запись
+            }
+        }
+    }
+}

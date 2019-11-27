@@ -1,0 +1,20 @@
+/*
+using (StreamWriter myStream = new StreamWriter("myfile.txt", true))
+{ myStream.WriteLine("Lorem ipsum"); }
+*/
+
+//StreamReader fileIn = new StreamReader("fileIn.txt");
+//StreamWriter fileOut = new StreamWriter("fileOut.txt");
+
+//FileStream myFile = new FileStream("myfile.txt", FileMode.OpenOrCreate);
+//FileStream myFile = new FileStream("myfile.txt", FileMode.Append);
+
+//StreamWriter myStream = new StreamWriter(myFile);
+
+//myStream.WriteLine(Console.ReadLine());
+
+//myStream.Close();
+//myFile.Close();
+
+using (StreamWriter myStream = new StreamWriter("myfile.txt", true))
+    { myStream.WriteLine("Lorem ipsum"); }

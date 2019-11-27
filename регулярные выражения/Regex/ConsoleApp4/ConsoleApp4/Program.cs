@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("строка: ");
+            string myLine = Console.ReadLine();
+
+            Console.Write("слово из строки:");
+            Regex myRegex = new Regex(@"\d{3}-\d{2}-\d{2}");
+            MatchCollection myMatches = myRegex.Matches(myLine);
+
+
+            if (myMatches.Count > 0)
+            {
+                foreach (Match match in myMatches)
+                    Console.WriteLine(match.Value);
+            }
+
+            
+
+            
+
+            Console.ReadLine();
+        }
+    }
+}
